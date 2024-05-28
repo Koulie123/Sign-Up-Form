@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Validation Form</title>
+     <link rel="stylesheet" href="style.css">
+     <script defer src="script.js"></script>
 </head>
 <body>
-    <form action="Location.com" method="post">
-        <div>
-            <fieldset>
-                <legend>Contact</legend>
-                <label for="name">*Name: </label>
-                <input type="text" name="name" id="name" required>
-                <br>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="fav-number">Favourite Number</label>
-                <input type="number" name="number" id="fav-number" max="20">
-                <br>
-                <div class="form-field">
-                    <label for="message">Message: </label>
-                    <br>
-                    <textArea name="message" id="message" minlength="3" maxlength="100" title="Please enter a message a least 3 chsarsrasd"></textArea>
-                </div>
-                
-                <br>
-                <button type="submit">Send Your Message!</button>
-            </fieldset>
+    <div class="container">
+        <div class="left-container">
+            <div id="bikes-div">
+                <img src="images/odin-lined.png" alt="Lined image of Odin">
+                <p>Bikes</p>
+            </div>
         </div>
-    </form>
+        <div class="right-container">
+            <form action="#" method="post">
+                <label for="first-name">First Name: </label>
+                <input type="text" required id="first-name">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

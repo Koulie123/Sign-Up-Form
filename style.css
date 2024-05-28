@@ -1,4 +1,55 @@
-.form-field {
+:root {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    --distance-to-opacity: 100px;
+    background-color: aliceblue;
+}
+
+.container{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+.container div {
+    height: 100vh;
+}
+
+.left-container {
+    /* flex: 2; */
+
+    width: 550px;
+    height: 100vh;
+    background-image: url(images/FormValidationImage.jpg)
+
+}
+.right-container {
+    flex: 3;
+}
+#bikes-div {
+    margin-top: var(--distance-to-opacity, 100px);
+    width: 100%;
+    height: 8rem;
+    background: black;
+    opacity: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bikes-div>* {
+    font-size: 2rem;
+    width: 100px;
+    color: white;
+    opacity: 1;
+    margin: 0;
+    vertical-align: middle;
+    height: 80%;
+}
+#bikes-div>img {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 3;
+    display: block;
+    background-color: red;
 }
